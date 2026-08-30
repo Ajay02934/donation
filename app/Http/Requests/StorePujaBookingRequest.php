@@ -1,0 +1,4 @@
+<?php
+namespace App\Http\Requests;
+use Illuminate\Foundation\Http\FormRequest;
+class StorePujaBookingRequest extends FormRequest { public function authorize(): bool { return true; } public function rules(): array { return ['puja_id'=>['required','exists:pujas,id'],'booking_slot_id'=>['required','exists:booking_slots,id'],'name'=>['required','string','max:255'],'email'=>['required','email'],'mobile'=>['required','string','max:20'],'birth_date'=>['nullable','date','before:today'],'birth_time'=>['nullable','date_format:H:i'],'birth_place'=>['nullable','string','max:255'],'address'=>['required','string','max:1000'],'people_count'=>['required','integer','min:1','max:50'],'puja_location'=>['required','string','max:255'],'special_requirements'=>['nullable','string','max:2000'],'message'=>['nullable','string','max:2000']]; } }

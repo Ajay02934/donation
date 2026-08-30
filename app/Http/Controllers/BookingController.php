@@ -1,0 +1,4 @@
+<?php
+namespace App\Http\Controllers;
+use App\Http\Requests\StorePujaBookingRequest; use App\Models\{Puja,PujaBooking}; use App\Services\BookingService;
+class BookingController extends Controller { public function create(Puja $puja) { $slots=$puja->slots()->whereDate('slot_date','>=',today())->where('is_active',true)->get()->filter->hasAvailability(); return view('bookings.create',compact('puja','slots')); } public function store(StorePujaBookingRequest $request, BookingService $service) { $booking=$service->reserve($request->validated(),auth()->id()); return redirect()->route('bookings.show',$booking)->with('success','Your sacred service has been reserved. Booking ID: '.$booking->booking_number); } public function show(PujaBooking $booking) { abort_unless(auth()->id()===$booking->user_id || auth()->user()?->is_admin,403); return view('bookings.show',compact('booking')); } }

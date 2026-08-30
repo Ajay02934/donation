@@ -1,0 +1,4 @@
+<?php
+namespace App\Services;
+use App\Models\{BookingSlot,PujaBooking}; use Illuminate\Support\Facades\DB; use Illuminate\Validation\ValidationException;
+class BookingService { public function reserve(array $data, ?int $userId): PujaBooking { return DB::transaction(function () use ($data,$userId) { $slot=BookingSlot::lockForUpdate()->with('puja')->findOrFail($data['booking_slot_id']); if($slot->puja_id != $data['puja_id'] || !$slot->hasAvailability()) throw ValidationException::withMessages(['booking_slot_id'=>'This slot has just been booked. Please select another.']); $slot->increment('reserved_count'); return PujaBooking::create(array_merge($data,['user_id'=>$userId,'booking_number'=>'JYO-'.now()->format('ymd').'-'.strtoupper(str()->random(6)),'amount'=>$slot->puja->price,'status'=>'pending','reserved_until'=>now()->addMinutes(15)])); }); } }
