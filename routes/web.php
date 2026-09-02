@@ -1,8 +1,9 @@
 <?php
 
-use App\Http\Controllers\{AuthController,BookingController,DashboardController,DonationController,PujaController,SiteController};
+use App\Http\Controllers\{AuthController,BookingController,DashboardController,DonationController,PujaController,SiteController,SitemapController};
 use Illuminate\Support\Facades\Route;
 
+Route::get('/sitemap.xml', SitemapController::class)->name('sitemap');
 Route::get('/', [SiteController::class,'home'])->name('home');
 Route::get('/pujas', [PujaController::class,'index'])->name('pujas.index');
 Route::get('/pujas/{puja:slug}', [PujaController::class,'show'])->name('pujas.show');
