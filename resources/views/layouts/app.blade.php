@@ -5,6 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>@yield('title', 'Raghav Puja & Jyotish Kendra')</title>
     @yield('meta')
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "ProfessionalService",
+                "@id": "https://raghavjyotishujjain.online/#business",
+                "name": "Raghav Puja & Jyotish Kendra",
+                "url": "https://raghavjyotishujjain.online/",
+                "telephone": "+91 79746 39689",
+                "image": "https://raghavjyotishujjain.online/images/puja-gallery.png",
+                "areaServed": "Ujjain",
+                "serviceType": [
+                    "Vedic Puja Services",
+                    "Muhurat Guidance",
+                    "Personal Jyotish Consultation"
+                ]
+            },
+            {
+                "@type": "WebSite",
+                "@id": "https://raghavjyotishujjain.online/#website",
+                "name": "Raghav Puja & Jyotish Kendra",
+                "url": "https://raghavjyotishujjain.online/"
+            }
+        ]
+    }
+    </script>
     <style>
         :root { color: #1b2430; background: #fff; font-family: Arial, Helvetica, sans-serif; }
         * { box-sizing: border-box; } html { scroll-behavior: smooth; } body { margin: 0; line-height: 1.5; } a { color: inherit; } button, input, textarea { font: inherit; }
