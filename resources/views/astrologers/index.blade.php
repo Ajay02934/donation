@@ -1,5 +1,13 @@
 @extends('layouts.app')
-@section('title', 'Pandit Rajesh Sharma | Raghav')
+@section('title', 'Pandit in Ujjain | Raghav Puja & Jyotish Kendra')
+@section('meta')
+<meta name="description" content="Learn about Raghav Puja &amp; Jyotish Kendra's Vedic pandit and puja guidance in Ujjain for ceremonies and personal consultations.">
+<link rel="canonical" href="https://raghavjyotishujjain.online/astrologers">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://raghavjyotishujjain.online/astrologers">
+<meta property="og:title" content="Pandit &amp; Vedic Puja Guidance in Ujjain | Raghav">
+<meta property="og:description" content="Learn about Raghav Puja &amp; Jyotish Kendra's Vedic pandit and puja guidance in Ujjain.">
+@endsection
 @section('content')
 <style>
     .acharya-intro { max-width: 900px; margin: 0 auto; text-align: center; }

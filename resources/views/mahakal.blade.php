@@ -1,9 +1,19 @@
 @extends('layouts.app')
-@section('title', 'Mahakal Darshan | Raghav')
+@section('title', 'Mahakal Darshan in Ujjain | Raghav Puja Kendra')
+@section('meta')
+<meta name="description" content="Learn about Mahakal Darshan and contact Raghav Puja &amp; Jyotish Kendra in Ujjain for darshan guidance and puja arrangements.">
+<link rel="canonical" href="https://raghavjyotishujjain.online/mahakal-darshan">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://raghavjyotishujjain.online/mahakal-darshan">
+<meta property="og:title" content="Mahakal Darshan in Ujjain | Raghav Puja Kendra">
+<meta property="og:description" content="Learn about Mahakal Darshan and contact Raghav Puja &amp; Jyotish Kendra in Ujjain for darshan guidance and puja arrangements.">
+<meta property="og:image" content="https://raghavjyotishujjain.online/images/mahakal-darshan.jpg">
+@endsection
 @section('content')
 <style>
     .mahakal-page { max-width: 1120px; margin: 0 auto; padding: 42px 24px 64px; }
-    .mahakal-hero { position: relative; min-height: 500px; display: flex; align-items: end; overflow: hidden; background: #21120c url('{{ asset('images/mahakal-darshan.jpg') }}') center/cover no-repeat; }
+    .mahakal-hero { position: relative; min-height: 500px; display: flex; align-items: end; overflow: hidden; background: #21120c; }
+    .mahakal-hero-image { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
     .mahakal-hero::after { content: ''; position: absolute; inset: 0; background: linear-gradient(transparent 35%, rgba(20, 8, 3, .82)); }
     .mahakal-copy { position: relative; z-index: 1; max-width: 620px; padding: 36px; color: #fff; }
     .mahakal-copy h1 { margin-bottom: 10px; font: 2.7rem Georgia, serif; }
@@ -13,6 +23,7 @@
 </style>
 <div class="mahakal-page">
     <div class="mahakal-hero">
+        <img class="mahakal-hero-image" src="{{ asset('images/mahakal-darshan.jpg') }}" alt="Mahakal Darshan at the Mahakaleshwar temple in Ujjain">
         <div class="mahakal-copy">
             <p class="muted" style="color:#ffd9a0">DIVINE DARSHAN</p>
             <h1>Mahakal Darshan</h1>

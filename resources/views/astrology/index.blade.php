@@ -1,5 +1,13 @@
 @extends('layouts.app')
-@section('title', 'Vedic Guides | Raghav')
+@section('title', 'Vedic Puja & Jyotish Guidance in Ujjain | Raghav')
+@section('meta')
+<meta name="description" content="Read practical Vedic guidance on puja, mantras and dosh shanti from Raghav Puja &amp; Jyotish Kendra in Ujjain.">
+<link rel="canonical" href="https://raghavjyotishujjain.online/astrology">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://raghavjyotishujjain.online/astrology">
+<meta property="og:title" content="Vedic Puja &amp; Jyotish Guidance in Ujjain | Raghav">
+<meta property="og:description" content="Read practical Vedic guidance on puja, mantras and dosh shanti from Raghav Puja &amp; Jyotish Kendra in Ujjain.">
+@endsection
 @section('content')
 <style>
     .guides-heading { max-width: 800px; margin-bottom: 28px; }

@@ -1,12 +1,20 @@
 @extends('layouts.app')
 
-@section('title', 'Contact | Raghav Puja & Jyotish Kendra')
+@section('title', 'Contact Pandit & Puja Services in Ujjain | Raghav')
+@section('meta')
+<meta name="description" content="Contact Raghav Puja &amp; Jyotish Kendra in Ujjain for Vedic puja, muhurat guidance, kundli consultation and online Jyotish sessions.">
+<link rel="canonical" href="https://raghavjyotishujjain.online/contact">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://raghavjyotishujjain.online/contact">
+<meta property="og:title" content="Contact Pandit &amp; Puja Services in Ujjain | Raghav">
+<meta property="og:description" content="Contact Raghav Puja &amp; Jyotish Kendra in Ujjain for Vedic puja, muhurat guidance and Jyotish consultation.">
+@endsection
 
 @section('content')
 <style>@media (max-width: 700px) { .contact-grid { grid-template-columns: 1fr !important; } }</style>
 <div class="container">
     <p class="muted">RAGHAV PUJA &amp; JYOTISH KENDRA</p>
-    <h1>Contact Acharya Rajesh Sharma</h1>
+    <h1>Contact Pandit &amp; Puja Services in Ujjain</h1>
     <div class="grid contact-grid" style="grid-template-columns: .85fr 1.15fr; align-items:start;">
         <section>
             <h2>Book a consultation</h2>

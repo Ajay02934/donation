@@ -1,6 +1,14 @@
 @extends('layouts.app')
 
-@section('title', 'Puja services | Raghav')
+@section('title', 'Vedic Puja Services in Ujjain | Raghav Puja Kendra')
+@section('meta')
+<meta name="description" content="Explore Vedic puja services in Ujjain, including Graha Shanti, Griha Pravesh and Vivah puja arrangements from Raghav Puja &amp; Jyotish Kendra.">
+<link rel="canonical" href="https://raghavjyotishujjain.online/pujas">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://raghavjyotishujjain.online/pujas">
+<meta property="og:title" content="Vedic Puja Services in Ujjain | Raghav Puja Kendra">
+<meta property="og:description" content="Explore Vedic puja services in Ujjain, including Graha Shanti, Griha Pravesh and Vivah puja arrangements.">
+@endsection
 
 @section('content')
 <style>
@@ -10,7 +18,7 @@
 <section class="puja-page">
     <div class="puja-page-head">
         <p class="muted">SACRED SERVICES</p>
-        <h1>विशेष पूजा एवं अनुष्ठान</h1>
+        <h1>विशेष पूजा एवं अनुष्ठान — Vedic Puja Services in Ujjain</h1>
         <p>वैदिक विधि से दोष निवारण, ग्रह शांति और विशेष पूजा सेवाएं।</p>
     </div>
     <div class="puja-page-grid">

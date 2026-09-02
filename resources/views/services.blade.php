@@ -1,5 +1,13 @@
 @extends('layouts.app')
-@section('title', 'Our Services | Raghav')
+@section('title', 'Puja & Jyotish Services in Ujjain | Raghav')
+@section('meta')
+<meta name="description" content="Discover puja services in Ujjain, from Vedic puja and Graha Shanti Puja to muhurat guidance and personal Jyotish consultation.">
+<link rel="canonical" href="https://raghavjyotishujjain.online/services">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://raghavjyotishujjain.online/services">
+<meta property="og:title" content="Puja &amp; Jyotish Services in Ujjain | Raghav">
+<meta property="og:description" content="Discover Vedic puja, Graha Shanti, muhurat guidance and Jyotish consultation services in Ujjain.">
+@endsection
 @section('content')
 <style>
     .services-page { max-width: 1120px; margin: 0 auto; padding: 42px 24px 64px; }
@@ -13,7 +21,7 @@
 </style>
 <div class="services-page">
     <p class="muted">WHAT WE OFFER</p>
-    <h1>Our Services ( हमारी सेवाएं )</h1>
+    <h1>Puja &amp; Jyotish Services in Ujjain ( हमारी सेवाएं )</h1>
     <p class="muted">Traditional puja arrangements and thoughtful Vedic guidance for every important milestone.</p>
     <div class="service-grid-page">
         @foreach(['Vedic Puja & Anushthan'=>'vedic-puja','Muhurat & Shubh Muhurat Guidance'=>'muhurat-guidance','Kundli & Jyotish Consultation'=>'kundli-consultation','Graha Shanti Puja'=>'graha-shanti','Griha Pravesh Puja'=>'griha-pravesh','Marriage & Vivah Puja'=>'vivah-puja','Online Jyotish Consultation'=>'online-consultation'] as $service=>$target)
