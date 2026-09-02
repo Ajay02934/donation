@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>@yield('title', 'Raghav Puja & Jyotish Kendra')</title>
+    @yield('meta')
     <style>
         :root { color: #1b2430; background: #fff; font-family: Arial, Helvetica, sans-serif; }
         * { box-sizing: border-box; } html { scroll-behavior: smooth; } body { margin: 0; line-height: 1.5; } a { color: inherit; } button, input, textarea { font: inherit; }
