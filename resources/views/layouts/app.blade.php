@@ -7,7 +7,7 @@
     @yield('meta')
     <script type="application/ld+json">
     {
-        "@context": "https://schema.org",
+        "@@context": "https://schema.org",
         "@graph": [
             {
                 "@type": "ProfessionalService",
