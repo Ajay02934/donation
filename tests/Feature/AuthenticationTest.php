@@ -22,7 +22,7 @@ class AuthenticationTest extends TestCase
             'terms' => '1',
         ]);
 
-        $response->assertRedirect('/account');
+        $response->assertRedirect('/');
         $this->assertAuthenticated();
         $this->assertDatabaseHas('users', ['email' => 'asha@example.com', 'mobile' => '+1 555 010 1234']);
     }

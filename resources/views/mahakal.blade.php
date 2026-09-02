@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', 'Mahakal Darshan | Ragav Jyoti')
+@section('title', 'Mahakal Darshan | Raghav')
 @section('content')
 <style>
     .mahakal-page { max-width: 1120px; margin: 0 auto; padding: 42px 24px 64px; }

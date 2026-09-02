@@ -1,11 +1,11 @@
 @extends('layouts.app')
 
-@section('title', 'Contact | Ragav Jyoti Puja & Jyotish Kendra')
+@section('title', 'Contact | Raghav Puja & Jyotish Kendra')
 
 @section('content')
 <style>@media (max-width: 700px) { .contact-grid { grid-template-columns: 1fr !important; } }</style>
 <div class="container">
-    <p class="muted">RAGAV JYOTI PUJA &amp; JYOTISH KENDRA</p>
+    <p class="muted">RAGHAV PUJA &amp; JYOTISH KENDRA</p>
     <h1>Contact Acharya Rajesh Sharma</h1>
     <div class="grid contact-grid" style="grid-template-columns: .85fr 1.15fr; align-items:start;">
         <section>
@@ -14,7 +14,10 @@
             <p><strong>Phone:</strong><br><a href="tel:+917974639689">+91 79746 39689</a></p>
             <p><strong>Email:</strong><br><a href="mailto:ajaysharmaas.094@gmail.com">ajaysharmaas.094@gmail.com</a></p>
             <p><strong>Service Area:</strong><br>At Your Home | Temple | Online Consultation</p>
-            <a class="button secondary" href="tel:+917974639689">Call Now</a>
+            <div class="contact-actions">
+                <a class="button secondary" href="tel:+917974639689">Call Now</a>
+                <a class="button whatsapp-button" href="https://wa.me/917974639689" target="_blank" rel="noopener">WhatsApp</a>
+            </div>
         </section>
         <form class="card" method="POST" action="{{ route('contact.store') }}">
             @csrf

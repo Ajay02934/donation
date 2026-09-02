@@ -49,7 +49,7 @@ class AuthController extends Controller
         Auth::login($user);
         $request->session()->regenerate();
 
-        return redirect()->route('dashboard')->with('success', 'Your account has been created. Welcome!');
+        return redirect()->route('home')->with('success', 'Your account has been created. Welcome!');
     }
 
     public function showLogin()
@@ -69,7 +69,7 @@ class AuthController extends Controller
         }
 
         $request->session()->regenerate();
-        return redirect()->intended(route('dashboard'));
+        return redirect()->intended(route('home'));
     }
 
     public function logout(Request $request)

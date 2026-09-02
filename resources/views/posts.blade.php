@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', 'Vedic Posts | Ragav Jyoti')
+@section('title', 'Vedic Posts | Raghav')
 @section('content')
 <style>
     .posts-page { max-width: 1120px; margin: 0 auto; padding: 42px 24px 64px; }
@@ -14,7 +14,6 @@
     .post-copy { padding: 16px; }
     .post-copy a, .top-articles a { color: #db5908; font-family: Georgia, serif; font-size: 1.05rem; }
     .post-copy p { margin: 10px 0 0; color: #6a6f75; font-size: .84rem; }
-    .post-date { display: block; margin-bottom: 8px; color: #7a8086; font-size: .78rem; }
     .top-articles h2 { margin-top: 0; }
     .top-articles a { display: block; margin-bottom: 13px; font-family: Arial, sans-serif; font-size: .9rem; }
     @media (max-width: 700px) { .posts-page { padding: 28px 16px 48px; } .posts-layout { grid-template-columns: 1fr; } .posts-grid { grid-template-columns: 1fr; } }
@@ -28,7 +27,6 @@
                 <article class="post-card">
                     <div class="post-image"></div>
                     <div class="post-copy">
-                        <span class="post-date">{{ $date }}</span>
                         <a href="{{ route('astrology', ['guidance' => $slug]) }}">{{ $title }}</a>
                         <p>{{ $description }}</p>
                     </div>

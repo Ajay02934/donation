@@ -9,6 +9,7 @@ use Illuminate\Database\Eloquent\Attributes\Hidden;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+use App\Models\Donation;
 
 #[Fillable(['name', 'email', 'mobile', 'address', 'terms_accepted_at', 'password', 'is_admin'])]
 #[Hidden(['password', 'remember_token'])]
@@ -30,6 +31,7 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+
 
     public function donations()
     {
